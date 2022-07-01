@@ -1,10 +1,15 @@
 package entities;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-import db.DB;
-
-public class Departament {
+public class Departament implements Serializable {
+	
+	/**
+	 * Serializable se quiser que o objeto seja gravado em arquivo, trafego em rede
+	 */
+	private static final long serialVersionUID = 1L;
+	
 	
 	private  Integer id;
 	private  String name;
